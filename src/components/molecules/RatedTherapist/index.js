@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 16,
     fontFamily: fonts.primary[600],
-    colors: colors.text.primary
+    color: colors.text.primary
   },
   category: {
     fontSize: 12,

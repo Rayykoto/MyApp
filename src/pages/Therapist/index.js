@@ -1,7 +1,6 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Gap, HomeProfile, NewsItem, RatedTherapist, TherapistCategory } from '../../components'
-import { DummyTherapist } from '../../assets'
 import { colors, fonts } from '../../utils'
 
 const Therapist = () => {
