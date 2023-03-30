@@ -1,15 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { HomeProfile } from '../../components'
 
-const Therapist = () => {
+const NewsItem = () => {
   return (
     <View>
-      <HomeProfile />
+      <Text>NewsItem</Text>
     </View>
   )
 }
 
-export default Therapist
+export default NewsItem
 
 const styles = StyleSheet.create({})

@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Hospitals = () => {
+const Hospital = () => {
   return (
     <View>
-      <Text>Hospitals</Text>
+      <Text>Hospital</Text>
     </View>
   )
 }
 
-export default Hospitals
+export default Hospital
 
 const styles = StyleSheet.create({})
