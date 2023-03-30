@@ -11,6 +11,7 @@ import IconTherapistUmum from './icon_therapist_umum.svg';
 import IconTherapistKid from './icon_therapist_kid.svg';
 import IconTherapistPsikiater from './icon_therapist_psikiater.svg';
 import IconTherapistKhusus from './icon_therapist_khusus';
+import IconStar from './ic-start.svg';
 
 export {
     IconBackDark,
@@ -25,5 +26,6 @@ export {
     IconTherapistUmum,
     IconTherapistKid,
     IconTherapistPsikiater,
-    IconTherapistKhusus
+    IconTherapistKhusus,
+    IconStar
 };
