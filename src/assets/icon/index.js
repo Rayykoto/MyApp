@@ -7,6 +7,10 @@ import IconMapActive from './ic-map-active.svg';
 import IconMap from './ic-map.svg';
 import IconMessageActive from './ic-message-active.svg';
 import IconMessage from './ic-message.svg';
+import IconTherapistUmum from './icon_therapist_umum.svg';
+import IconTherapistKid from './icon_therapist_kid.svg';
+import IconTherapistPsikiater from './icon_therapist_psikiater.svg';
+import IconTherapistKhusus from './icon_therapist_khusus';
 
 export {
     IconBackDark,
@@ -17,5 +21,9 @@ export {
     IconMapActive,
     IconMap,
     IconMessageActive,
-    IconMessage
+    IconMessage,
+    IconTherapistUmum,
+    IconTherapistKid,
+    IconTherapistPsikiater,
+    IconTherapistKhusus
 };
