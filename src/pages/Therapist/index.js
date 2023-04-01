@@ -2,6 +2,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Gap, HomeProfile, NewsItem, RatedTherapist, TherapistCategory } from '../../components'
 import { colors, fonts } from '../../utils'
+import { JSONCategoryTherapist } from '../../assets'
 
 const Therapist = () => {
   return (
@@ -17,10 +18,13 @@ const Therapist = () => {
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <View style={styles.category}>
               <Gap width={32} />
-              <TherapistCategory category={'Therapist Umum'}/>
-              <TherapistCategory category={'Therapisst Anak'}/>
-              <TherapistCategory category={'Therapist Remaja'}/>
-              <TherapistCategory category={'Therapist Dewasa'}/>
+              {
+                JSONCategoryTherapist.data.map(item => {
+                  return <TherapistCategory 
+                  key={item.id} 
+                  category={item.category}/>
+                })
+              }
               <Gap width={22} />
             </View>   
           </ScrollView>

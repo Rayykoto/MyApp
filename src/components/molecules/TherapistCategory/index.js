@@ -1,12 +1,26 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { IconTherapistUmum } from '../../../assets'
+import { IconTherapist, IconTherapistKhusus, IconTherapistKid, IconTherapistPsikiater, IconTherapistUmum } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
 const TherapistCategory = ({category}) => {
+  const Icon = () => {
+    if(category === 'Therapist Anak'){
+      return <IconTherapistKid style={styles.illustration} />;
+    }
+    if(category === 'Therapist Remaja'){
+      return <IconTherapistKhusus style={styles.illustration} />;
+    }
+    if(category === 'Therapist Dewasa'){
+      return <IconTherapistPsikiater style={styles.illustration} />;
+    }
+    if(category === 'Therapist Umum'){
+      return <IconTherapistUmum style={styles.illustration} />;
+    }
+  }
   return (
     <View style={styles.container}>
-    <IconTherapistUmum style={styles.illustration}/>
+      <Icon />
       <Text style={styles.label}>Saya butuh</Text>
       <Text style={styles.category}>{category}</Text>
     </View>

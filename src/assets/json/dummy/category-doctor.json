@@ -1,0 +1,20 @@
+{
+    "data" : [
+        {
+            "id": 1,
+            "category": "Therapist Anak"
+        },
+        {
+            "id": 2,
+            "category": "Therapist Remaja"
+        },
+        {
+            "id": 3,
+            "category": "Therapist Dewasa"
+        },
+        {
+            "id": 4,
+            "category": "Therapist Khusus"
+        }
+    ]
+}
