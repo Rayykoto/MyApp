@@ -3,13 +3,13 @@ import React from 'react'
 import { DummyTherapist } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
-const ListDoctor = () => {
+const ListDoctor = ({profile, name, desc}) => {
   return (
     <View style={styles.container}>
-      <Image source={DummyTherapist} style={styles.avatar} />
+      <Image source={profile} style={styles.avatar} />
       <View>
-        <Text style={styles.name}>Diana Nashiroh</Text>
-        <Text style={styles.description}t>Baik Bu, Terimkasih banyak atas waktunya</Text>
+        <Text style={styles.name}>{name}</Text>
+        <Text style={styles.description}>{desc}</Text>
       </View>
     </View>
   )
