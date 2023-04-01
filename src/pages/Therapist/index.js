@@ -17,19 +17,19 @@ const Therapist = () => {
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <View style={styles.category}>
               <Gap width={32} />
-              <TherapistCategory />
-              <TherapistCategory />
-              <TherapistCategory />
-              <TherapistCategory />
+              <TherapistCategory category={'Therapist Umum'}/>
+              <TherapistCategory category={'Therapisst Anak'}/>
+              <TherapistCategory category={'Therapist Remaja'}/>
+              <TherapistCategory category={'Therapist Dewasa'}/>
               <Gap width={22} />
             </View>   
           </ScrollView>
         </View>
         <View style={styles.wrapperSection}>
           <Text style={styles.sectionLabel}>Top Rated Therapist</Text>
-            <RatedTherapist />
-            <RatedTherapist />
-            <RatedTherapist />
+            <RatedTherapist name={'Diana Nashiroh'} category={'Anak'}/>
+            <RatedTherapist name={'Farah Aulia'} category={'Dewasa'}/>
+            <RatedTherapist name={'Putri'} category={'umum'}/>
           <Text style={styles.sectionLabel}>Good News</Text>
         </View>
           <NewsItem />

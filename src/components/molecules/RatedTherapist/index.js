@@ -3,13 +3,13 @@ import React from 'react'
 import { DummyTherapist, IconStar } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
-const RatedTherapist = () => {
+const RatedTherapist = ({name, category}) => {
   return (
     <View style={styles.container}>
       <Image source={DummyTherapist} style={styles.avatar}/>
       <View style={styles.profile}>
-        <Text style={styles.name}>Diana Nashiroh</Text>
-        <Text style={styles.category}>Kids</Text>
+        <Text style={styles.name}>{name}</Text>
+        <Text style={styles.category}>{category}</Text>
       </View>
       <View style={styles.rate}>
           <IconStar />

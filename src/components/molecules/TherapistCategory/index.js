@@ -3,12 +3,12 @@ import React from 'react'
 import { IconTherapistUmum } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
-const TherapistCategory = () => {
+const TherapistCategory = ({category}) => {
   return (
     <View style={styles.container}>
     <IconTherapistUmum style={styles.illustration}/>
       <Text style={styles.label}>Saya butuh</Text>
-      <Text style={styles.category}>Therapist Umum</Text>
+      <Text style={styles.category}>{category}</Text>
     </View>
   )
 }
