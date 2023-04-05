@@ -6,8 +6,10 @@ import RatedTherapist from "./RatedTherapist";
 import NewsItem from "./NewsItem";
 import ListDoctor from "./ListDoctor";
 import ListHospital from "./ListHospital";
+import ChatItem from "./ChatItem";
+import InputChat from "./InputChat";
 
 
 export {Header, BottomNavigator, HomeProfile, 
     TherapistCategory, RatedTherapist, NewsItem, 
-    ListDoctor, ListHospital};
+    ListDoctor, ListHospital, ChatItem, InputChat};

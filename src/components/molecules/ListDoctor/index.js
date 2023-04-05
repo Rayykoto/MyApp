@@ -1,17 +1,20 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { DummyTherapist } from '../../../assets'
+import { DummyTherapist, IconNext } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
-const ListDoctor = ({profile, name, desc}) => {
+const ListDoctor = ({profile, name, desc, type, onPress}) => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity onPress={onPress} style={styles.container}>
       <Image source={profile} style={styles.avatar} />
-      <View>
+      <View style={styles.content}>
         <Text style={styles.name}>{name}</Text>
         <Text style={styles.description}>{desc}</Text>
       </View>
-    </View>
+      {
+        type === 'next' && <IconNext />
+      }
+    </TouchableOpacity>
   )
 }
 
@@ -23,7 +26,11 @@ const styles = StyleSheet.create({
     padding: 16,
     borderBottomWidth: 1,
     borderBottomColor: colors.border,
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'space-between'
+    },
+    content: {
+      flex: 1
     },
     avatar: {
         width: 46, height: 46, 

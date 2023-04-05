@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import { BottomNavigator } from '../components';
-import { GetStarted, Splash, Register, Login, UploadPhoto, Therapist, Messages, Hospitals } from '../pages';
+import { GetStarted, Splash, Register, Login, UploadPhoto, Therapist, Messages, Hospitals, ChooseTherapist, Chatting } from '../pages';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -47,6 +47,14 @@ const Router = () => {
             />
             <Stack.Screen name='MainApp'
             component={MainApp}
+            options={{headerShown: false}}>
+            </Stack.Screen>
+            <Stack.Screen name='ChooseTherapist'
+            component={ChooseTherapist}
+            options={{headerShown: false}}>
+            </Stack.Screen>
+            <Stack.Screen name='Chatting'
+            component={Chatting}
             options={{headerShown: false}}>
             </Stack.Screen>
         </Stack.Navigator>

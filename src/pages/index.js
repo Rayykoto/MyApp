@@ -7,5 +7,7 @@ import UploadPhoto from './UploadPhoto';
 import Therapist from './Therapist';
 import Messages from './Messages';
 import Hospitals from './Hospitals';
+import ChooseTherapist from './ChooseTherapist';
+import Chatting from './Chatting';
 
-export {Splash, GetStarted, Button, Register, Login, UploadPhoto, Therapist, Messages, Hospitals};
+export {Splash, GetStarted, Button, Register, Login, UploadPhoto, Therapist, Messages, Hospitals, ChooseTherapist, Chatting};

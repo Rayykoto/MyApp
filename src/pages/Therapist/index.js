@@ -4,7 +4,7 @@ import { Gap, HomeProfile, NewsItem, RatedTherapist, TherapistCategory } from '.
 import { colors, fonts } from '../../utils'
 import { JSONCategoryTherapist } from '../../assets'
 
-const Therapist = () => {
+const Therapist = ({navigation}) => {
   return (
     <View style={styles.page}>
     <View style={styles.content}>
@@ -22,7 +22,9 @@ const Therapist = () => {
                 JSONCategoryTherapist.data.map(item => {
                   return <TherapistCategory 
                   key={item.id} 
-                  category={item.category}/>
+                  category={item.category}
+                  onPress={() => navigation.navigate('ChooseTherapist')}
+                  />
                 })
               }
               <Gap width={22} />
