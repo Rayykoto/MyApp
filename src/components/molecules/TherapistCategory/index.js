@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, } from 'react-native'
 import React from 'react'
-import { IconTherapist, IconTherapistKhusus, IconTherapistKid, IconTherapistPsikiater, IconTherapistUmum } from '../../../assets'
+import { IconTherapistKhusus, IconTherapistKid, IconTherapistPsikiater, IconTherapistUmum } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
 const TherapistCategory = ({category, onPress}) => {
@@ -14,7 +14,7 @@ const TherapistCategory = ({category, onPress}) => {
     if(category === 'Therapist Dewasa'){
       return <IconTherapistPsikiater style={styles.illustration} />;
     }
-    if(category === 'Therapist Umum'){
+    if(category === 'Therapist Khusus'){
       return <IconTherapistUmum style={styles.illustration} />;
     }
   }

@@ -10,7 +10,7 @@ import IconMessage from './ic-message.svg';
 import IconTherapistUmum from './icon_therapist_umum.svg';
 import IconTherapistKid from './icon_therapist_kid.svg';
 import IconTherapistPsikiater from './icon_therapist_psikiater.svg';
-import IconTherapistKhusus from './icon_therapist_khusus';
+import IconTherapistKhusus from './icon_therapist_khusus.svg';
 import IconStar from './ic-start.svg';
 import IconNext from './ic-chevron.svg';
 import IconBackLight from './ic-arrow-back-white.svg';

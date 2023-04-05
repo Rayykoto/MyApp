@@ -15,8 +15,6 @@ const Hospital = () => {
         <ListHospital  type="Rumah Sakit" name="Citra Bunga Meredeka" address="Jln. Hybrida Kelapa Gading" pic={DummyHospital1}/>
         <ListHospital  type="Rumah Anak" name="Citra Bunga Meredeka" address="Jln. Hybrida Kelapa Gading" pic={DummyHospital2}/>
         <ListHospital  type="Rumah Sakit Jiwa" name="Citra Bunga Meredeka" address="Jln. Hybrida Kelapa Gading" pic={DummyHospital3}/>
-        <ListHospital />
-        <ListHospital />
       </View>
     </View>
   )
