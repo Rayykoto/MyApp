@@ -9,9 +9,9 @@ const Chatting = ({navigation}) => {
       <Header type="dark-profile" onPress={() => navigation.goBack()} title="Diana Nashiroh"/>
       <View style={styles.content}>
         <Text style={styles.chatDate}>Senin, 05 April, 2023</Text>
+        <ChatItem isMe />
         <ChatItem />
-        <ChatItem />
-        <ChatItem />
+        <ChatItem isMe/>
       </View>
       <InputChat />
     </View>
