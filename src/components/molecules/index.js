@@ -4,12 +4,14 @@ import HomeProfile from "./HomeProfile";
 import TherapistCategory from "./TherapistCategory";
 import RatedTherapist from "./RatedTherapist";
 import NewsItem from "./NewsItem";
-import ListDoctor from "./ListDoctor";
+import List from "./List";
 import ListHospital from "./ListHospital";
 import ChatItem from "./ChatItem";
 import InputChat from "./InputChat";
+import Profile from "./Profile";
 
 
 export {Header, BottomNavigator, HomeProfile, 
     TherapistCategory, RatedTherapist, NewsItem, 
-    ListDoctor, ListHospital, ChatItem, InputChat};
+    List, ListHospital, ChatItem, InputChat,
+    Profile};

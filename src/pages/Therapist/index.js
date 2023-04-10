@@ -11,7 +11,7 @@ const Therapist = ({navigation}) => {
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.wrapperSection}>
       <Gap height={30} />
-      <HomeProfile />
+      <HomeProfile onPress={() => navigation.navigate('UserProfile')} />
         <Text style={styles.welcome}>Mau Konsultasi Dengan Siapa Hari ini?</Text>
       </View>
         <View style={styles.wrapperScroll}>

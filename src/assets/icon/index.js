@@ -16,6 +16,10 @@ import IconNext from './ic-chevron.svg';
 import IconBackLight from './ic-arrow-back-white.svg';
 import IconChatActive from './ic-chat-active.svg';
 import IconChatNonActive from './ic-chat-nonactive.svg';
+import IconEditProfile from './ic-edit-profile.svg';
+import IconLanguage from './ic-language.svg';
+import IconRate from './ic-start-rate.svg';
+import IconHelp from './ic-help-center.svg';
 
 export {
     IconBackDark,
@@ -35,5 +39,9 @@ export {
     IconNext,
     IconBackLight,
     IconChatActive,
-    IconChatNonActive
+    IconChatNonActive,
+    IconEditProfile,
+    IconLanguage,
+    IconRate,
+    IconHelp
 };

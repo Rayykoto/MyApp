@@ -1,20 +1,17 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import TherapistCategory from '../TherapistCategory'
-import RatedTherapist from '../RatedTherapist'
-import NewsItem from '../NewsItem'
 import { DummyUser } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
-const HomeProfile = () => {
+const HomeProfile = ({onPress}) => {
   return (
-    <View style={styles.container}>
-     <Image source={DummyUser} style={styles.avatar}/>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
+     <Image source={DummyUser} style={styles.avatar} />
       <View>
         <Text style={styles.name}>Raymond Koto</Text>
         <Text style={styles.profession}>Programmer</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   )
 }
 
