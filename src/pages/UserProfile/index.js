@@ -7,7 +7,9 @@ const UserProfile = ({navigation}) => {
     <View style={styles.page}>
         <Header title="Profile" onPress={() => navigation.goBack()}/>
         <Profile />
-        <List name="Edit Profile" desc="Last Updated Yesterday" type="next" icon="edit-profile" />
+        <List name="Edit Profile" desc="Last Updated Yesterday" type="next" icon="edit-profile" 
+        onPress={() => navigation.navigate('UpdateProfile')}
+        />
         <List name="Language" desc="Available 12 Language" type="next" icon="language" />
         <List name="Give Us Rate" desc="On Google Play Store" type="next" icon="rate" />
         <List name="Help" desc="Read our guidelines" type="next" icon="help" />

@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import { BottomNavigator } from '../components';
-import { GetStarted, Splash, Register, Login, UploadPhoto, Therapist, Messages, Hospitals, ChooseTherapist, Chatting, UserProfile } from '../pages';
+import { GetStarted, Splash, Register, Login, UploadPhoto, Therapist, Messages, Hospitals, ChooseTherapist, Chatting, UserProfile, UpdateProfile } from '../pages';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -59,6 +59,10 @@ const Router = () => {
             </Stack.Screen>
             <Stack.Screen name='UserProfile'
             component={UserProfile}
+            options={{headerShown: false}}>
+            </Stack.Screen>
+            <Stack.Screen name='UpdateProfile'
+            component={UpdateProfile}
             options={{headerShown: false}}>
             </Stack.Screen>
         </Stack.Navigator>

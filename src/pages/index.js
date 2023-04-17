@@ -10,5 +10,8 @@ import Hospitals from './Hospitals';
 import ChooseTherapist from './ChooseTherapist';
 import Chatting from './Chatting';
 import UserProfile from './UserProfile';
+import UpdateProfile from './UploadProfile';
 
-export {Splash, GetStarted, Button, Register, Login, UploadPhoto, Therapist, Messages, Hospitals, ChooseTherapist, Chatting, UserProfile};
+export {Splash, GetStarted, Button, Register, Login, 
+    UploadPhoto, Therapist, Messages, Hospitals, 
+    ChooseTherapist, Chatting, UserProfile, UpdateProfile};
