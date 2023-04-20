@@ -2,7 +2,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Gap, HomeProfile, NewsItem, RatedTherapist, TherapistCategory } from '../../components'
 import { colors, fonts } from '../../utils'
-import { JSONCategoryTherapist } from '../../assets'
+import { DummyTherapist2, JSONCategoryTherapist } from '../../assets'
 
 const Therapist = ({navigation}) => {
   return (
@@ -33,9 +33,9 @@ const Therapist = ({navigation}) => {
         </View>
         <View style={styles.wrapperSection}>
           <Text style={styles.sectionLabel}>Top Rated Therapist</Text>
-            <RatedTherapist name={'Diana Nashiroh'} category={'Anak'}/>
-            <RatedTherapist name={'Farah Aulia'} category={'Dewasa'}/>
-            <RatedTherapist name={'Putri'} category={'umum'}/>
+            <RatedTherapist name={'Rindu Selyna'} category={'umum'} avatar={DummyTherapist2} onPress={() => navigation.navigate('TherapistProfile')}/>
+            <RatedTherapist name={'Rasty Felysa'} category={'Dewasa'} avatar={DummyTherapist2} onPress={() => navigation.navigate('TherapistProfile')}/>
+            <RatedTherapist name={'Putri Lestari'} category={'Anak'} avatar={DummyTherapist2} onPress={() => navigation.navigate('TherapistProfile')}/>
           <Text style={styles.sectionLabel}>Good News</Text>
         </View>
           <NewsItem />

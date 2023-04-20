@@ -1,12 +1,12 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { DummyTherapist, IconStar } from '../../../assets'
 import { colors, fonts } from '../../../utils'
+import { IconStar } from '../../../assets'
 
-const RatedTherapist = ({name, category}) => {
+const RatedTherapist = ({onPress, name, category, avatar}) => {
   return (
-    <View style={styles.container}>
-      <Image source={DummyTherapist} style={styles.avatar}/>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
+      <Image source={avatar} style={styles.avatar}/>
       <View style={styles.profile}>
         <Text style={styles.name}>{name}</Text>
         <Text style={styles.category}>{category}</Text>
@@ -18,7 +18,7 @@ const RatedTherapist = ({name, category}) => {
           <IconStar />
           <IconStar />
       </View>
-    </View>
+    </TouchableOpacity>
   )
 }
 
@@ -28,7 +28,8 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingBottom: 16
+    paddingBottom: 16,
+    alignItems: 'center'
   },
   profile: {
     flex: 1

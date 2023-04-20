@@ -4,7 +4,7 @@ import { List } from '../../components'
 import { colors, fonts } from '../../utils'
 import { DummyTherapist, DummyUser } from '../../assets'
 
-const Messages = () => {
+const Messages = ({ navigation }) => {
   const [therapists] = useState([
     {
       id: 1,
@@ -31,11 +31,13 @@ const Messages = () => {
         <Text style={styles.title}>Messages</Text>
         {
           therapists.map(therapist => {
-            return <List 
-            key={therapist.id}
-            profile={therapist.profile} 
-            name={therapist.name} 
-            desc={therapist.desc} />
+            return <List
+              key={therapist.id}
+              profile={therapist.profile}
+              name={therapist.name}
+              desc={therapist.desc}
+              onPress={() => navigation.navigate('Chatting')}
+            />
           })
         }
       </View>
@@ -56,7 +58,7 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 20
   },
   title: {
-    fontSize: 20, 
+    fontSize: 20,
     fontFamily: fonts.primary[600],
     color: colors.text.primary,
     marginTop: 30,

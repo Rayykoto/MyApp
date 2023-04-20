@@ -4,23 +4,23 @@ import { Button, Gap, Header, Link } from '../../components'
 import { IconAddPhoto, IMNullPhoto } from '../../assets'
 import { colors, fonts } from '../../utils'
 
-const UploadPhoto = ({navigation}) => {
+const UploadPhoto = ({ navigation }) => {
   return (
     <View style={styles.page}>
       <Header onPress={() => navigation.goBack()} title="Upload Photo" />
       <View style={styles.content}>
-      <View style={styles.profile}>
-        <View style={styles.avatarWrapper}>
-          <Image source={IMNullPhoto} style={styles.avatar} />
-          <IconAddPhoto style={styles.addPhoto} />
-        </View>
-        <Text style={styles.name}>Diana Nashiroh</Text>
-        <Text style={styles.profession}>Therapist Siplaing Oke</Text>
+        <View style={styles.profile}>
+          <View style={styles.avatarWrapper}>
+            <Image source={IMNullPhoto} style={styles.avatar} />
+            <IconAddPhoto style={styles.addPhoto} />
+          </View>
+          <Text style={styles.name}>Rindu Selyna</Text>
+          <Text style={styles.profession}>Therapist Sipaling Oke</Text>
         </View>
         <View>
-          <Button title="Upload and Continue" />
+          <Button title="Upload and Continue" onPress={() => navigation.replace('MainApp')} />
           <Gap height={30} />
-          <Link title="Skip for this" align="center" size={16} />
+          <Link title="Skip for this" align="center" size={16} onPress={() => navigation.replace('MainApp')} />
         </View>
       </View>
     </View>
@@ -30,17 +30,17 @@ const UploadPhoto = ({navigation}) => {
 export default UploadPhoto
 
 const styles = StyleSheet.create({
-  page:{
+  page: {
     flex: 1,
     backgroundColor: colors.white
   },
   content: {
     paddingHorizontal: 40,
-    paddingBottom: 40, 
-    flex: 1, 
+    paddingBottom: 40,
+    flex: 1,
     justifyContent: 'space-between'
   },
-  profile:{ 
+  profile: {
     alignItems: 'center',
     flex: 1,
     justifyContent: 'center'
