@@ -2,25 +2,25 @@ import { StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import { List } from '../../components'
 import { colors, fonts } from '../../utils'
-import { DummyTherapist, DummyUser } from '../../assets'
+import { DummyTherapist2, DummyUser } from '../../assets'
 
 const Messages = ({ navigation }) => {
   const [therapists] = useState([
     {
       id: 1,
-      profile: DummyUser,
+      profile: DummyTherapist2,
       name: 'Koto',
       desc: 'Baik ibu, terimakasih banyak atas wakt...'
     },
     {
       id: 2,
-      profile: DummyTherapist,
+      profile: DummyTherapist2,
       name: 'Farah',
       desc: 'Baik ibu, kaka...'
     },
     {
       id: 3,
-      profile: DummyTherapist,
+      profile: DummyTherapist2,
       name: 'Putri',
       desc: 'Oke, Terimakasih...'
     },

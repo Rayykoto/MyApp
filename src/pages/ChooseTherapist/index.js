@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native'
 import React from 'react'
 import { Header, List } from '../../components'
-import { DummyTherapist } from '../../assets'
+import { DummyTherapist2 } from '../../assets'
 import { colors } from '../../utils'
 
 const ChooseTherapist = ({ navigation }) => {
@@ -12,31 +12,31 @@ const ChooseTherapist = ({ navigation }) => {
       />
       <List
         type="next"
-        profile={DummyTherapist}
+        profile={DummyTherapist2}
         name="Rasty Felysa"
         desc="Wanita"
         onPress={() => navigation.navigate('Chatting')}
       />
       <List
         type="next"
-        profile={DummyTherapist}
+        profile={DummyTherapist2}
         name="Rasty Felysa"
         desc="Wanita"
       />
       <List
         type="next"
-        profile={DummyTherapist}
+        profile={DummyTherapist2}
         name="Rasty Felysa"
         desc="Wanita"
       />
       <List type="next"
-        profile={DummyTherapist}
+        profile={DummyTherapist2}
         name="Rasty Felysa"
         desc="Wanita"
       />
       <List
         type="next"
-        profile={DummyTherapist}
+        profile={DummyTherapist2}
         name="Rasty Felysa"
         desc="Wanita"
       />

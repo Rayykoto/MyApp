@@ -8,7 +8,7 @@ const TherapistProfile = ({ navigation }) => {
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.page}>
         <Header title="Therapist Profile" onPress={() => navigation.goBack()} />
-        <Profile name="Rasty Felysa" desc="Therapist Anak" />
+        <Profile name="Rindu Selyna" desc="Therapist Anak" />
         <Gap height={10} />
         <ProfileItem label="Alumnus" value="Universitas Indonesia, 2020" />
         <ProfileItem label="Tempat Praktik" value="Rumah Sakit Umum, Jakarta" />

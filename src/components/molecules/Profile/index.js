@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
-import { DummyUser, IconRemovePhoto } from '../../../assets'
+import { DummyTherapist2, IconRemovePhoto } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
 const Profile = ({ name, desc, isRemove }) => {
   return (
     <View style={styles.container}>
       <View style={styles.borderProfile}>
-        <Image source={DummyUser} style={styles.avatar} />
+        <Image source={DummyTherapist2} style={styles.avatar} />
         {isRemove && <IconRemovePhoto style={styles.removePhoto} />}
       </View>
       {name && (
