@@ -4,6 +4,7 @@ import { Button, Gap, Header, Input, Loading } from '../../components'
 import { colors, useForm } from '../../utils'
 import { Fire } from '../../config'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { showMessage, hideMessage } from "react-native-flash-message";
 
 const Register = ({ navigation }) => {
 
@@ -28,7 +29,12 @@ const Register = ({ navigation }) => {
       .catch((error) => {
         const errorMessage = error.message;
         setLoading(false)
-        console.log(errorMessage)
+        showMessage({
+          message: errorMessage,
+          type: 'default',
+          backgroundColor: colors.error,
+          color: colors.white
+        });
       });
   }
   return (
