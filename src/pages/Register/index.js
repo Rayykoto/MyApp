@@ -22,6 +22,7 @@ const Register = ({ navigation }) => {
     createUserWithEmailAndPassword(Fire, form.email, form.password)
       .then((success) => {
         setLoading(false)
+        setForm('reset')
         console.log('register success', success)
       })
       .catch((error) => {
