@@ -6,7 +6,7 @@ import { Button } from '../../atoms'
 const InputChat = () => {
   return (
     <View style={styles.container}>
-      <TextInput style={styles.input} placeholder="Tulis Pesan Untuk Diana" />
+      <TextInput style={styles.input} placeholder="Tulis Pesan Untuk Rasty" />
       <Button type="btn-icon-send" />
     </View>
   )
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   input: {
-    backgroundColor: colors.disable, 
+    backgroundColor: colors.disable,
     padding: 14,
     borderRadius: 10,
     flex: 1,
