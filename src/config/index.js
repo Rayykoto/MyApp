@@ -1,3 +1,3 @@
-import App from './Fire';
+import Fire from './Fire';
 
-export { App }
+export { Fire }

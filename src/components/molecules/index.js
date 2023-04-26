@@ -10,9 +10,12 @@ import ChatItem from "./ChatItem";
 import InputChat from "./InputChat";
 import Profile from "./Profile";
 import ProfileItem from "./ProfileItem";
+import Loading from "./Loading";
 
 
-export {Header, BottomNavigator, HomeProfile, 
-    TherapistCategory, RatedTherapist, NewsItem, 
+export {
+    Header, BottomNavigator, HomeProfile,
+    TherapistCategory, RatedTherapist, NewsItem,
     List, ListHospital, ChatItem, InputChat,
-    Profile, ProfileItem};
+    Profile, ProfileItem, Loading
+};

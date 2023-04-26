@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
 
+// TODO: Replace the following with your app's Firebase project configuration
+// See: https://firebase.google.com/docs/web/learn-more#config-object
 const firebaseConfig = {
     apiKey: "AIzaSyBwASoC1zjVw00293qNDjczBbxHvrGxcL8",
     authDomain: "my-therapist-01.firebaseapp.com",
@@ -12,7 +14,10 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const App = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const app = initializeApp(firebaseConfig);
 
-export default App;
+
+// Initialize Firebase Authentication and get a reference to the service
+const Fire = getAuth(app);
+
+export default Fire
